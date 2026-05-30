@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f7fb;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #1f2937;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.user-card {
+  width: 320px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.user-card h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.user-card p {
+  margin: 8px 0;
+  color: #555;
+  font-size: 16px;
+}
+
+.counter {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.counter p {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.counter button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.counter button:hover {
+  background-color: #1d4ed8;
+}
+
+
+.footer {
+  margin-top: 40px;
+  background-color: #111827;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
