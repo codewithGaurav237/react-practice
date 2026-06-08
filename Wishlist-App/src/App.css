@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  padding: 10px;
+  min-height: 100vh;
+}
+
+.app {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.app h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input Section */
+.app > div:first-of-type {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.app > div:first-of-type input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.app > div:first-of-type input:focus {
+  border-color: #0077ff;
+}
+
+/* Buttons */
+button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #0077ff;
+  color: white;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Todo Items */
+.app > div:last-of-type > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  margin-top: 10px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+span {
+  color: #333;
+  font-size: 16px;
+  word-break: break-word;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* Empty State */
+p {
+  text-align: center;
+  color: #777;
+  margin-top: 20px;
+}
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+  .app {
+    padding: 15px;
+    margin: 10px auto;
+  }
+
+  .app h1 {
+    font-size: 1.6rem;
+  }
+
+  .app > div:first-of-type {
+    flex-direction: column;
+  }
+
+  .app > div:first-of-type input,
+  .app > div:first-of-type button {
+    width: 100%;
+  }
+
+  .app > div:last-of-type > div {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .app > div:last-of-type > div button {
+    width: 100%;
+  }
+
+  label {
+    width: 100%;
+  }
+}
